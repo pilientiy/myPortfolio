@@ -232,7 +232,7 @@ body {
     width: 100%;
 }
 
-.home-info-link {
+.inner-info-link {
     display: inline-block;
     margin: 25px;
     padding: 20px 30px;
@@ -244,7 +244,7 @@ body {
     font-weight: 500;
 }
 
-.home-info-link:hover {
+.inner-info-link:hover {
     background: var(--hover-color);
 }
 
@@ -273,7 +273,39 @@ body {
     }
 }
 
+/* === end home=== */
+
+/* === styles for all sections !!!=== */
+
+.section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 20px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.inner-title {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+}
+
+/* ===  End styles for all sections !!!=== */
 
 
 
+
+/* === About me === */
+
+
+
+/* === End About me === */
 
