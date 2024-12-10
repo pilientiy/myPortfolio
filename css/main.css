@@ -250,7 +250,7 @@ body {
 
 .scroll-down{
     display: block;
-    margin: 20px auto 0;
+    margin: 20px auto 0px;
     width: 120px;
     text-align: center;
     color: var(--first-color);
@@ -296,6 +296,25 @@ body {
     margin-bottom: 20px;
     background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+}
+
+.inner-second-title {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    transform: translateY(-55px);
+}
+
+.inner-second-title::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: var(--second-color);
 }
 
 /* ===  End styles for all sections !!!=== */
@@ -304,6 +323,71 @@ body {
 
 
 /* === About me === */
+.about-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-img{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.about-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+.description h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description h4 span{
+    color: var(--second-color); 
+}
+
+.description p {
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--liner-color);
+}
+
+
+.professional-list { 
+    display: flex;
+    column-gap: 30px;  
+}
+
+.professional-list .list-item { 
+    display: flex;
+    column-gap: 15px;  
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.list-item .number {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.list-item .text {
+    color:var(--third-color);
+    font-size: var(--small-font-size);
+} 
 
 
 
